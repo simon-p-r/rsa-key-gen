@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "4.0"
+  - "4"
+  - "5.0"
+  - "5"
+
+sudo: false
+
+install:
+  - cd /usr/src
+  - wget https://www.openssl.org/source/openssl-1.0.2g.tar.gz
+  - tar -zxf openssl-1.0.2g.tar.gz
+  - cd openssl-1.0.2a && ./config && make && make test && make install
+  - mv /usr/bin/openssl /root/
+  - ln -s /usr/local/ssl/bin/openssl /usr/bin/openssl
+
+addons:
+  apt:
+    packages:
+    - make
+    - wget

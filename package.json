@@ -1,0 +1,21 @@
+{
+  "name": "rsa-key-gen",
+  "version": "0.0.1",
+  "description": "rsa key pair and certificate generator",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "pem": "^1.8.1"
+  },
+  "devDependencies": {
+    "code": "^2.1.1",
+    "lab": "^10.2.0"
+  },
+  "scripts": {
+    "test": "lab -a code -v -t 100 -L -m 8000"
+  },
+  "author": "simon-p-r",
+  "license": "BSD-3-Clause"
+}
