@@ -1,6 +1,6 @@
 {
   "name": "rsa-key-gen",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "rsa key pair and certificate generator",
   "main": "lib/index.js",
   "directories": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "code": "^2.1.1",
-    "lab": "^10.2.0"
+    "lab": "^10.3.0"
   },
   "scripts": {
     "test": "lab -a code -v -t 100 -L -m 8000"

@@ -8,7 +8,7 @@ It makes use of [pem](https://github.com/andris9/pem) module which is dependant 
 # Install
 
  ```bash
- $ npm install yajwt
+ $ npm install rsa-key-gen
  ```
 
 # Usage
