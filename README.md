@@ -35,7 +35,6 @@ It makes use of [pem](https://github.com/andris9/pem) module which is dependant 
 
 
  const options = {
-
     bits: 4096,
     cipher: 'camellia256',
     password: 'secret'
@@ -70,7 +69,6 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
  ```js
 
  const options = {
-
     bits: 4096,
     selfSigned: true
  };
@@ -90,7 +88,7 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
 
  ```
 
- Todo
+Todo
 
  * improve docs
  * improve validation of incoming parameters
