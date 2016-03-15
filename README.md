@@ -1,24 +1,19 @@
 # rsa-key-gen [![Build Status](https://travis-ci.org/simon-p-r/rsa-key-gen.svg?branch=master)](https://travis-ci.org/simon-p-r/rsa-key-gen)
 
-<!-- ###### Module exports 2 methods
 
- + generateKeyPair => (options, callback);
- + generateCertificate => (options, callback) -->
+An implementation of [openssl genrsa for node](https://www.openssl.org/docs/man1.0.2/apps/genrsa.html).
 
+It makes use of [pem](https://github.com/andris9/pem) module which is dependant upon openssl binary to work as is a wrapper to the command line tool.
 
- An implementation of [openssl genrsa for node](https://www.openssl.org/docs/man1.0.2/apps/genrsa.html).
-
-It makes use of [pem](https://github.com/andris9/pem) module which is dependant upon openssl binary to work as is a wrapper to the command line tool
-
- # Install
+# Install
 
  ```bash
  $ npm install yajwt
  ```
 
- # Usage
+# Usage
 
- ### rsaKeyGen.generateKeyPair(options, [callback])
+### rsaKeyGen.generateKeyPair(options, [callback])
 
  (Callback) with error and result signature
 
@@ -58,7 +53,7 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
 });
  ```
 
- ### rsaKeyGen.generateCertificate(options, [callback])
+### rsaKeyGen.generateCertificate(options, [callback])
 
  (Callback) with error and result signature
 
