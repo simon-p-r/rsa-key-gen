@@ -14,8 +14,20 @@ const expect = Code.expect;
 describe('Key-Gen', () => {
 
 
+    it('should return an error from generateKeyPair due to invalid openSSL path', (done) => {
+
+        Gen.setOpenSSLPath('invalid');
+        Gen.generateKeyPair((err, results) => {
+
+            expect(err).to.exist();
+            expect(results).to.not.exist();
+            done();
+        });
+    });
+
     it('should generate a private/public key pair with default options', (done) => {
 
+        Gen.setOpenSSLPath('openssl');
         Gen.generateKeyPair((err, results) => {
 
             expect(err).to.not.exist();
@@ -41,10 +53,20 @@ describe('Key-Gen', () => {
         });
     });
 
+    it('should return an error from generateCertificate due to invalid openSSL path', (done) => {
 
+        Gen.setOpenSSLPath('invalid');
+        Gen.generateCertificate((err, results) => {
+
+            expect(err).to.exist();
+            expect(results).to.not.exist();
+            done();
+        });
+    });
 
     it('should generate a certificate with default options', (done) => {
 
+        Gen.setOpenSSLPath('openssl');
         Gen.generateCertificate((err, results) => {
 
             expect(err).to.not.exist();

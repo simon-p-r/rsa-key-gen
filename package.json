@@ -1,6 +1,6 @@
 {
   "name": "rsa-key-gen",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "rsa key pair and certificate generator",
   "main": "lib/index.js",
   "directories": {

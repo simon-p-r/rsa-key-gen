@@ -88,6 +88,23 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
 
  ```
 
+ ### rsaKeyGen.setOpenSSLPath(path)
+
+
+
+  `path` custom location of openSSL path
+
+Caveat with this method must be called in between calls to different binaries as value is cached by node's require
+
+
+
+  ```js
+
+
+ rsaKeyGen.generateCertificate('custom/path/to/openssl');
+
+ ```
+
 Todo
 
  * improve docs
