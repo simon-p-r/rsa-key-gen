@@ -20,7 +20,9 @@
   },
   "devDependencies": {
     "code": "^2.1.1",
-    "lab": "^10.3.0"
+    "lab": "^10.3.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.2"
   },
   "scripts": {
     "test": "lab -a code -v -t 100 -L -m 8000"
