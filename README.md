@@ -105,6 +105,13 @@ Caveat with this method must be called in between calls to different binaries as
 
  ```
 
+Install rsa-gen cli
+
+```bash
+npm i rsa-key-gen -g
+```
+
+
 Todo
 
  * improve docs

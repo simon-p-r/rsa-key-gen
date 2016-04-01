@@ -1,16 +1,21 @@
 {
   "name": "rsa-key-gen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "rsa key pair and certificate generator",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
+  },
+  "bin": {
+    "rsa-gen": "./bin/rsa-gen"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:simon-p-r/rsa-key-gen.git"
   },
   "dependencies": {
+    "bossy": "^2.0.1",
+    "neo-async": "^1.8.0",
     "pem": "^1.8.1"
   },
   "devDependencies": {
