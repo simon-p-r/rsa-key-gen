@@ -71,10 +71,10 @@ describe('Cli', () => {
         });
     });
 
-    it('should return an error when keyPairs cannot be generated', (done) => {
+    it('should return an error when keyPairs cannot be generated due to invalid openssl path', (done) => {
 
         RSA.setOpenSSLPath('invalid');
-        const args = ['-b', '409600'];
+        const args = ['-b', '2048'];
         Cli.run(args, (err, output) => {
 
             expect(err).to.exist();
