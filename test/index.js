@@ -13,6 +13,22 @@ const expect = Code.expect;
 
 describe('Key-Gen', () => {
 
+    it('should throw an error when generateKeyPair function has no callback', (done) => {
+
+        expect(() => Gen.generateKeyPair()).throws(Error);
+        done();
+    });
+
+    it('should return an error from generateKeyPair due to invalid options', (done) => {
+
+        Gen.generateKeyPair({ bits: 1 }, (err, results) => {
+
+            expect(err).to.exist();
+            expect(results).to.not.exist();
+            done();
+        });
+    });
+
 
     it('should return an error from generateKeyPair due to invalid openSSL path', (done) => {
 
@@ -49,6 +65,22 @@ describe('Key-Gen', () => {
             expect(err).to.not.exist();
             expect(results.private).to.be.a.string();
             expect(results.public).to.be.a.string();
+            done();
+        });
+    });
+
+    it('should throw an error when generateCertificate function has no callback', (done) => {
+
+        expect(() => Gen.generateCertificate()).throws(Error);
+        done();
+    });
+
+    it('should return an error from generateCertificate due to invalid options', (done) => {
+
+        Gen.generateCertificate({ bits: 1 }, (err, results) => {
+
+            expect(err).to.exist();
+            expect(results).to.not.exist();
             done();
         });
     });

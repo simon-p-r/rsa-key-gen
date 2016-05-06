@@ -25,6 +25,7 @@ It makes use of [pem](https://github.com/andris9/pem) module which is dependant 
  * `cipher` default: `aes256` see openssl man page for valid options
  * `password`: string password for key pair
 
+ If no options parameter is used bits defaults to 4096 and cipher to 'aes256'
 
 
  Example
@@ -62,6 +63,8 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
 
  * `selfSigned` boolean
  * `bits` length in bits for certificate
+
+ If no options parameter is used bits defaults to 4096 and selfSigned to true
 
  Other valid options are described in the pem modules docs
 
