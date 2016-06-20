@@ -1,4 +1,6 @@
-# rsa-key-gen [![Build Status](https://travis-ci.org/simon-p-r/rsa-key-gen.svg?branch=master)](https://travis-ci.org/simon-p-r/rsa-key-gen)
+# rsa-key-gen
+[![Build Status](https://travis-ci.org/simon-p-r/rsa-key-gen.svg?branch=master)](https://travis-ci.org/simon-p-r/rsa-key-gen)
+[![Coverage Status](https://coveralls.io/repos/github/simon-p-r/rsa-key-gen/badge.svg?branch=master)](https://coveralls.io/github/simon-p-r/rsa-key-gen?branch=master)
 
 
 An implementation of [openssl genrsa for node](https://www.openssl.org/docs/man1.0.2/apps/genrsa.html).
