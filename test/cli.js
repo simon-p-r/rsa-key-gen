@@ -2,12 +2,11 @@
 
 const Code = require('code');
 const Lab = require('lab');
-const Mkdirp = require('mkdirp');
 const Os = require('os');
 const Path = require('path');
-const Rmdir = require('rimraf');
 const Cli = require('../lib/cli');
 const RSA = require('../lib/index');
+const Utils = require('basic-utils');
 
 // Declare internals
 const internals = {};
@@ -26,15 +25,15 @@ describe('Cli', () => {
     const rootDir = `${Os.tmpdir()}${Path.sep}keys${Path.sep}root`;
     lab.before((done) => {
 
-        Mkdirp.sync(keysDir);
-        Mkdirp.sync(rootDir);
+        Utils.mkDirSync(keysDir);
+        Utils.mkDirSync(rootDir);
         done();
     });
 
     lab.after((done) => {
 
-        Rmdir.sync(keysDir);
-        Rmdir.sync(rootDir);
+        Utils.rmDirSync(keysDir);
+        Utils.rmDirSync(rootDir);
         done();
     });
 
@@ -129,9 +128,6 @@ describe('Cli', () => {
             done();
         });
     });
-
-
-
 
 
 });
