@@ -27,7 +27,8 @@
     "lab": "^10.9.0"
   },
   "scripts": {
-    "test": "lab -a code -v -t 100 -L -m 4000"
+    "test": "lab -a code -v -t 100 -L -m 4000",
+    "coveralls": "lab -r lcov | coveralls"
   },
   "author": "simon-p-r",
   "license": "BSD-3-Clause"
