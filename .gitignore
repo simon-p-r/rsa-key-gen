@@ -4,3 +4,5 @@ private
 test.js
 *.pem
 .vscode
+.vs 
+npm-debug.log

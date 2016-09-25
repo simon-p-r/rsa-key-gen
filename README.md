@@ -1,6 +1,9 @@
 # rsa-key-gen
+[![Current Version](https://img.shields.io/npm/v/rsa-key-gen.svg?maxAge=1000)](https://www.npmjs.org/package/rsa-key-gen)
+[![dependency Status](https://img.shields.io/david/simon-p-r/rsa-key-gen.svg?maxAge=1000)](https://david-dm.org/simon-p-r/rsa-key-gen)
+[![devDependency Status](https://img.shields.io/david/dev/simon-p-r/rsa-key-gen.svg?maxAge=1000)](https://david-dm.org/simon-p-r/rsa-key-gen)
 [![Build Status](https://travis-ci.org/simon-p-r/rsa-key-gen.svg?branch=master)](https://travis-ci.org/simon-p-r/rsa-key-gen)
-[![Coverage Status](https://coveralls.io/repos/github/simon-p-r/rsa-key-gen/badge.svg?branch=master)](https://coveralls.io/github/simon-p-r/rsa-key-gen?branch=master)
+[![Coveralls](https://img.shields.io/coveralls/simon-p-r/rsa-key-gen.svg?maxAge=1000)](https://coveralls.io/github/simon-p-r/rsa-key-gen)
 
 
 An implementation of [openssl genrsa for node](https://www.openssl.org/docs/man1.0.2/apps/genrsa.html).
@@ -30,19 +33,17 @@ It makes use of [pem](https://github.com/andris9/pem) module which is dependant 
  If no options parameter is used bits defaults to 4096 and cipher to 'aes256'
 
 
- Example
+Example
 
- ```js
+```javascript
 
- const rsaKeyGen = require('rsa-key-gen');
+const rsaKeyGen = require('rsa-key-gen');
 
-
- const options = {
+const options = {
     bits: 4096,
     cipher: 'camellia256',
     password: 'secret'
- };
-
+};
 
 rsaKeyGen.generateKeyPair(options, (err, result) => {
 
@@ -53,7 +54,7 @@ rsaKeyGen.generateKeyPair(options, (err, result) => {
     console.log('%s\n\n%s', result.private, result.public);
 
 });
- ```
+```
 
 ### rsaKeyGen.generateCertificate(options, [callback])
 
@@ -106,7 +107,7 @@ Caveat with this method must be called in between calls to different binaries as
   ```js
 
 
- rsaKeyGen.generateCertificate('custom/path/to/openssl');
+ rsaKeyGen.setOpenSSLPath('custom/path/to/openssl');
 
  ```
 
