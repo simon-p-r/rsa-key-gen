@@ -16,7 +16,7 @@
   "dependencies": {
     "bossy": "^3.0.1",
     "hoek": "^4.1.0",
-    "joi": "^9.0.4",
+    "joi": "^10.4.1",
     "neo-async": "^2.0.1",
     "pem": "^1.8.3"
   },
@@ -24,7 +24,7 @@
     "basic-utils": "^1.6.0",
     "code": "^4.0.0",
     "coveralls": "^2.11.14",
-    "lab": "^11.0.1"
+    "lab": "^13.0.1"
   },
   "scripts": {
     "test": "lab -a code -v -t 100 -L -m 4000",
