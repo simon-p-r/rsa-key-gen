@@ -1,4 +1,6 @@
 # rsa-key-gen
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/simon-p-r/rsa-key-gen.svg)](https://greenkeeper.io/)
 [![Current Version](https://img.shields.io/npm/v/rsa-key-gen.svg?maxAge=1000)](https://www.npmjs.org/package/rsa-key-gen)
 [![dependency Status](https://img.shields.io/david/simon-p-r/rsa-key-gen.svg?maxAge=1000)](https://david-dm.org/simon-p-r/rsa-key-gen)
 [![devDependency Status](https://img.shields.io/david/dev/simon-p-r/rsa-key-gen.svg?maxAge=1000)](https://david-dm.org/simon-p-r/rsa-key-gen)
