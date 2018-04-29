@@ -26,7 +26,7 @@
     "lab": "^15.4.1"
   },
   "scripts": {
-    "test": "lab -a code -v -t 100 -L -m 6000",
+    "test": "lab -a code -v -t 100 -L -m 8000",
     "coveralls": "lab -r lcov | coveralls"
   },
   "author": "simon-p-r",
