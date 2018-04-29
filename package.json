@@ -1,6 +1,6 @@
 {
   "name": "rsa-key-gen",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "rsa key pair and certificate generator",
   "main": "lib/index.js",
   "directories": {
@@ -14,17 +14,16 @@
     "url": "git@github.com:simon-p-r/rsa-key-gen.git"
   },
   "dependencies": {
-    "bossy": "^3.0.1",
-    "hoek": "^4.1.0",
-    "joi": "^9.0.4",
+    "bossy": "^4.0.1",
+    "hoek": "^5.0.3",
+    "joi": "^13.2.0",
     "neo-async": "^2.0.1",
     "pem": "^1.8.3"
   },
   "devDependencies": {
-    "basic-utils": "^1.6.0",
-    "code": "^4.0.0",
-    "coveralls": "^2.11.14",
-    "lab": "^11.0.1"
+    "code": "^5.2.0",
+    "coveralls": "^3.0.0",
+    "lab": "^15.4.1"
   },
   "scripts": {
     "test": "lab -a code -v -t 100 -L -m 4000",
